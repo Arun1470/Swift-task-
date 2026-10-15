@@ -1,0 +1,15 @@
+class Employee {
+    var name: String
+    var salary: Double {
+        didSet {
+            print("Salary changed from \(oldValue) to \(salary)")
+        }
+    }
+    init(name: String, salary: Double) {
+        self.name = name
+        self.salary = salary
+    }
+}
+let employee = Employee(name: "Arun", salary: 25000)
+employee.salary = 30000
+employee.salary = 35000

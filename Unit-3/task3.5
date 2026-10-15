@@ -1,0 +1,11 @@
+struct Rectangle {
+    var width: Double
+    var height: Double
+    var area: Double {
+        return width * height
+    }
+}
+let r = Rectangle(width: 10, height: 5)
+print("Width:", r.width)
+print("Height:", r.height)
+print("Area:", r.area)
