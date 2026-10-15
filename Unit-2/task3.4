@@ -1,0 +1,12 @@
+struct Student {
+    var name: String
+    var rollNumber: Int
+    var marks: Int
+    func isPassed() -> Bool {
+        return marks >= 40
+    }
+}
+let s1 = Student(name: "Arun", rollNumber: 101, marks: 85)
+let s2 = Student(name: "Priya", rollNumber: 102, marks: 35)
+print(s1.name, "Passed:", s1.isPassed())
+print(s2.name, "Passed:", s2.isPassed())
